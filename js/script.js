@@ -1,32 +1,11 @@
 console.log("Script Loaded");
-
-//Card Object with Images by url, title for string, defintion string for answer
-class Card {
-  constructor(imgFront, imgRear, title, definition) {
-    this.imgFront = imgFront;
-    this.imgRear = imgRear;
-    this.title = title;
-    this.defition = definition;
-  }
-}
-
-//Deck object for holding the cards in an array.  Function for adding a card.
-class Deck {
-  constructor(title, cards) {
-    this.title = title;
-    this.cards = [];
-  }
-  addCard() {
-    this.cards.push(this.card);
-  }
-}
-
-yogaCards = [
+//Card Array
+const yogaCards = [
   {
     title: "Headstand (Sirsasana)",
     description:
       "Known as the ‘king of the asanas’ for its remarkable benefits, the posture improves circulation, strengthens the respiratory system and heart, increases memory, concentration and intellectual capacity and promotes relaxation. The brain, spinal cord and sympathetic nervous system are vitalised and the senses sharpened. The pituitary and pineal glands are stimulated, revitalising the entire mind and body. The inversion relieves varicose veins and constipation, counteracts nervous disorders and anxiety, improves the quality of sleep and increases confidence.",
-    image: "images/1-Sirshasana_400x600.jpg"
+    image: "./images/1-Sirshasana_400x600.jpg"
   },
   {
     title: "Shoulderstand (Sarvangasana)",
@@ -95,3 +74,62 @@ yogaCards = [
     image: "12-Trikonasana_600x400.jpg"
   }
 ];
+
+//Counter for card state
+
+//Button advance card counter increment
+
+//Card Object with Images by url, title for string, defintion string for answer
+class Card {
+  constructor(imgFront, imgRear, title, definition) {
+    this.imgFront = imgFront;
+    this.imgRear = imgRear;
+    this.title = title;
+    this.defition = definition;
+  }
+}
+
+//Deck object for holding the cards in an array.  Function for adding a card.
+class Deck {
+  constructor(title, cards) {
+    this.title = title;
+    this.cards = [];
+  }
+  addCard() {
+    this.cards.push(this.card);
+  }
+}
+
+//This function updates the Description in the card object
+function updateCard(backDescrip){ 
+    document.querySelector(".side.back").innerHTML = backDescrip;
+}
+
+updateCard(yogaCards[0].description);
+
+function updateImg(imgSrc){
+    console.log(imgSrc)
+    document.querySelector(".side.front").style.backgroundImage = `url(${imgSrc})`;
+}
+
+updateImg(yogaCards[0].image);
+
+// //This function adds DOM elements to the div class="card"
+// function addChild(){
+//   let child = document.createElement("section");
+//   let textnode = document.createTextNode("Some Description");
+//   child.appendChild(textnode);
+//   document.querySelector(".card").appendChild(child);
+//   let dom_img = document.createElement("img");
+//   dom_img.src = "./images/1-Sirshasana_400x600.jpg"
+//   child.appendChild(dom_img);
+//   document.getElementsByTagName("img");
+// }
+// // addChild();
+
+// //Function to addListener
+// function addListener(){
+//   document.querySelector("img").addEventListener('click', )
+// }
+//Flip Card modification code https://www.101computing.net/flip-cards-in-html-css-javascript/
+
