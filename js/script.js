@@ -78,7 +78,7 @@ const yogaCards = [
 //Counter for card state
 let cardCounter = 0;
 
-//Button advance card counter increment
+//Advance card and counter increment
 function advCard(){
   if(cardCounter === yogaCards.length) {
     cardCounter = 0;
@@ -90,6 +90,9 @@ function advCard(){
     updateImg(yogaCards[cardCounter].image);
   }
 }
+
+//Button listener for click
+const buttonListener = document.querySelector("#advCard").addEventListener("click", advCard());
 
 //Card Object with Images by url, title for string, defintion string for answer
 class Card {
