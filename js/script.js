@@ -76,8 +76,20 @@ const yogaCards = [
 ];
 
 //Counter for card state
+let cardCounter = 0;
 
 //Button advance card counter increment
+function advCard(){
+  if(cardCounter === yogaCards.length) {
+    cardCounter = 0;
+    updateCard(yogaCards[cardCounter].description);
+    updateImg(yogaCards[cardCounter].image);
+  } else {
+    cardCounter += 1;
+    updateCard(yogaCards[cardCounter].description);
+    updateImg(yogaCards[cardCounter].image);
+  }
+}
 
 //Card Object with Images by url, title for string, defintion string for answer
 class Card {
@@ -131,5 +143,5 @@ updateImg(yogaCards[0].image);
 // function addListener(){
 //   document.querySelector("img").addEventListener('click', )
 // }
-//Flip Card modification code https://www.101computing.net/flip-cards-in-html-css-javascript/
+//Flip Card modification code https://codepen.io/101Computing/pen/GbOJmE?editors=1100
 
