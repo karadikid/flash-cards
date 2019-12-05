@@ -132,10 +132,18 @@ updateImg(yogaCards[0].image);
 
 //Function for capturing form input and comparing the value to yogaCard[cardCounter].title
 const formInput = document.querySelector("input");
+const form = document.querySelector("form");
 
-function formSubmit() {
-  formInput.value;
-}
+form.addEventListener("submit", evt => {
+  evt.preventDefault();
+  const value = formInput.value;
+  
+  if (value == yogaCards[cardCounter].title){
+    alert("You're a Yogi!");
+  } else {
+    alert("Asa-Not!");
+  }
+})
 
 // //This function adds DOM elements to the div class="card"
 // function addChild(){
