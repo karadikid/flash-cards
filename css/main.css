@@ -58,8 +58,14 @@
   font-size: 20px;
 }
 
-#NameAsana {
+#advCard {
+    display: flex;
     margin: 50px;
     border: 50px auto;
-    align-content: center;
+}
+
+#NameAsana {
+    display: flex;
+    margin: 50px;
+    border: 50px auto;
 }
