@@ -80,8 +80,8 @@ const yogaCards = [
 let cardCounter = 0;
 
 //Advance card and counter increment
-function advCard(){
-  if(cardCounter === yogaCards.length-1) {
+function advCard() {
+  if (cardCounter === yogaCards.length - 1) {
     cardCounter = 0;
     updateCard(yogaCards[cardCounter].description);
     updateImg(yogaCards[cardCounter].image);
@@ -93,7 +93,9 @@ function advCard(){
 }
 
 //Button listener for click
-const buttonListener = document.querySelector("#advCard").addEventListener("click", advCard);
+const buttonListener = document
+  .querySelector("#advCard")
+  .addEventListener("click", advCard);
 
 //Card Object with Images by url, title for string, defintion string for answer
 class Card {
@@ -117,14 +119,16 @@ class Deck {
 }
 
 //This function updates the Description in the card object
-function updateCard(backDescrip){ 
-    document.querySelector(".side.back").innerHTML = backDescrip;
+function updateCard(backDescrip) {
+  document.querySelector(".side.back").innerHTML = backDescrip;
 }
 
 updateCard(yogaCards[0].description);
 
-function updateImg(imgSrc){
-    document.querySelector(".side.front").style.backgroundImage = `url(${imgSrc})`;
+function updateImg(imgSrc) {
+  document.querySelector(
+    ".side.front"
+  ).style.backgroundImage = `url(${imgSrc})`;
 }
 
 //Testing function
@@ -137,13 +141,13 @@ const form = document.querySelector("form");
 form.addEventListener("submit", evt => {
   evt.preventDefault();
   const value = formInput.value;
-  
-  if (value == yogaCards[cardCounter].title){
+
+  if (value == yogaCards[cardCounter].title) {
     alert("You're a Yogi!");
   } else {
     alert("Asa-Not!");
   }
-})
+});
 
 // //This function adds DOM elements to the div class="card"
 // function addChild(){
@@ -163,4 +167,3 @@ form.addEventListener("submit", evt => {
 //   document.querySelector("img").addEventListener('click', )
 // }
 //Flip Card modification code https://codepen.io/101Computing/pen/GbOJmE?editors=1100
-
