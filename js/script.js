@@ -141,7 +141,9 @@ const form = document.querySelector("form");
 form.addEventListener("submit", evt => {
   evt.preventDefault();
   const value = formInput.value;
+  let troof = (!document.querySelector('.card.flipped').style.backgroundImage);
 
+  //Test answer and update card
   if (value == yogaCards[cardCounter].title) {
     updateCard("You're a Yogi");
     updateImg(`url(${"https://media.giphy.com/media/w5f56AhubQo8w/source.gif"}`)
@@ -153,10 +155,19 @@ form.addEventListener("submit", evt => {
   }
 });
 
+//Function to activate card
 function clickButton() { 
   document.querySelector('.card').click(); 
 } 
 
+//Future function for testing if card already flipped
+function getFlip() {
+  if (document.querySelector(".card.flipped").style.hasOwnProperty) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 // //This function adds DOM elements to the div class="card"
 // function addChild(){
