@@ -128,6 +128,7 @@ function updateImg(imgSrc){
     document.querySelector(".side.front").style.backgroundImage = `url(${imgSrc})`;
 }
 
+//Testing function
 updateImg(yogaCards[0].image);
 
 // //This function adds DOM elements to the div class="card"
