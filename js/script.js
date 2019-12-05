@@ -130,6 +130,13 @@ function updateImg(imgSrc){
 //Testing function
 updateImg(yogaCards[0].image);
 
+//Function for capturing form input and comparing the value to yogaCard[cardCounter].title
+const formInput = document.querySelector("input");
+
+function formSubmit() {
+  formInput.value;
+}
+
 // //This function adds DOM elements to the div class="card"
 // function addChild(){
 //   let child = document.createElement("section");
