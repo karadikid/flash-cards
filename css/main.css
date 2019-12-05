@@ -1,11 +1,8 @@
 .flipCard {
   width: 600px;
   height: 600px;
-  /* background-repeat: no-repeat; */
-  /* background-position: relative; */
+  background-position: relative;
   margin: 50px auto;
-  background-size: cover;
-  background-position: center center;
 }
 
 .flipCard .card.flipped {
@@ -45,10 +42,10 @@
   line-height: 160px;
   /* background-color: #7030a0; */
   border: 3px solid white;
-  color: white;
+  color: #f4ae35 bold;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: bottom;
 }
 
 .flipCard .card .back {
