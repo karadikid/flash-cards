@@ -16,7 +16,11 @@
   </head>
   <body>
     <header>
-      Instructions: Click to flip a card. Click to remember it. Click to test!
+      While viewing in the browser of your choice, best viewed in Chrome or
+      Brave Desktop, click the individual cards to see the Asana description.
+      Advanced users can try to type the Asana name in the text box and click
+      "Name that Asana" button. Clicking "Advance Card" allows one to move
+      forward through them.
     </header>
     <div class="flipCard">
       <div class="card" onclick="this.classList.toggle('flipped');">
@@ -24,11 +28,11 @@
         <div class="side back">Description</div>
       </div>
     </div>
-      <button id="advCard">Advance Card</button>
-      <form id="NameAsana">
-        <input type="text" class="input" placeholder="Nameasana" />
-        <button class="searchButton">Name That Asana!</button>
-      </form>
+    <button id="advCard">Advance Card</button>
+    <form id="NameAsana">
+      <input type="text" class="input" placeholder="Nameasana" />
+      <button class="searchButton">Name That Asana!</button>
+    </form>
     <script src="./js/script.js"></script>
   </body>
 </html>
