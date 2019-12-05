@@ -1,11 +1,12 @@
 console.log("Script Loaded");
+
 //Card Array
 const yogaCards = [
   {
     title: "Headstand (Sirsasana)",
     description:
       "Known as the ‘king of the asanas’ for its remarkable benefits, the posture improves circulation, strengthens the respiratory system and heart, increases memory, concentration and intellectual capacity and promotes relaxation. The brain, spinal cord and sympathetic nervous system are vitalised and the senses sharpened. The pituitary and pineal glands are stimulated, revitalising the entire mind and body. The inversion relieves varicose veins and constipation, counteracts nervous disorders and anxiety, improves the quality of sleep and increases confidence.",
-    image: "./images/1-Sirshasana_400x600.jpg"
+    image: "images/1-Sirshasana_400x600.jpg"
   },
   {
     title: "Shoulderstand (Sarvangasana)",
@@ -71,7 +72,7 @@ const yogaCards = [
     title: "Triangle (Trikonasana)",
     description:
       "The Triangle tones the spinal nerves and abdominal organs. Peristalsis of the digestive tract is increased. The pelvic area, legs and arms are strengthened, and hip flexibility promoted. Increased lateral movement to the spine is developed with each side of the body stretched and strengthened and balance improved. It is known to relieve nervous depression.",
-    image: "12-Trikonasana_600x400.jpg"
+    image: "images/12-Trikonasana_600x400.jpg"
   }
 ];
 
@@ -80,7 +81,7 @@ let cardCounter = 0;
 
 //Advance card and counter increment
 function advCard(){
-  if(cardCounter === yogaCards.length) {
+  if(cardCounter === yogaCards.length-1) {
     cardCounter = 0;
     updateCard(yogaCards[cardCounter].description);
     updateImg(yogaCards[cardCounter].image);
@@ -92,7 +93,7 @@ function advCard(){
 }
 
 //Button listener for click
-const buttonListener = document.querySelector("#advCard").addEventListener("click", advCard());
+const buttonListener = document.querySelector("#advCard").addEventListener("click", advCard);
 
 //Card Object with Images by url, title for string, defintion string for answer
 class Card {
