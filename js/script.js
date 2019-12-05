@@ -1,8 +1,5 @@
 console.log("Script Loaded");
 
-//Set no repeat property
-document.body.style.backgroundRepeat="no-repeat";
-
 //Card Array
 const yogaCards = [
   {
@@ -127,7 +124,6 @@ function updateCard(backDescrip){
 updateCard(yogaCards[0].description);
 
 function updateImg(imgSrc){
-    console.log(imgSrc)
     document.querySelector(".side.front").style.backgroundImage = `url(${imgSrc})`;
 }
 
