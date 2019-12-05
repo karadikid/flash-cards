@@ -18,13 +18,17 @@
     <header>
       Instructions: Click to flip a card. Click to remember it. Click to test!
     </header>
-    <div class="flipCard"> 
-            <div class="card" onclick="this.classList.toggle('flipped');"> 
-              <div class="side front">What Asana?</div>
-              <div class="side back">Description</div> 
-            </div> 
-            <button id="advCard">Advance Card</button>  
-        </div> 
+    <div class="flipCard">
+      <div class="card" onclick="this.classList.toggle('flipped');">
+        <div class="side front">What Asana?</div>
+        <div class="side back">Description</div>
+      </div>
+      <form id="NameAsana">
+        <button id="advCard">Advance Card</button>
+        <input type="text" class="input" placeholder="Nameasana" />
+        <button class="searchButton">Name That Asana!</button>
+      </form>
+    </div>
     <script src="./js/script.js"></script>
   </body>
 </html>

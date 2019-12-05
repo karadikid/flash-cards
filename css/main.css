@@ -58,6 +58,8 @@
   font-size: 20px;
 }
 
-#button {
-  align-content: center;
+#NameAsana {
+    margin: 50px;
+    border: 50px auto;
+    align-content: center;
 }
