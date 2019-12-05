@@ -1,5 +1,8 @@
 console.log("Script Loaded");
 
+//Set no repeat property
+document.body.style.backgroundRepeat="no-repeat";
+
 //Card Array
 const yogaCards = [
   {
