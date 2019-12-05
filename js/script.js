@@ -143,11 +143,20 @@ form.addEventListener("submit", evt => {
   const value = formInput.value;
 
   if (value == yogaCards[cardCounter].title) {
-    alert("You're a Yogi!");
+    updateCard("You're a Yogi");
+    updateImg(`url(${"https://media.giphy.com/media/w5f56AhubQo8w/source.gif"}`)
+    clickButton();
   } else {
-    alert("Asa-Not!");
+    updateCard("Asa Not!");
+    updateImg(`url(${"https://media.giphy.com/media/KBis3x78FezJK/source.gif"}`)
+    clickButton();
   }
 });
+
+function clickButton() { 
+  document.querySelector('.card').click(); 
+} 
+
 
 // //This function adds DOM elements to the div class="card"
 // function addChild(){
