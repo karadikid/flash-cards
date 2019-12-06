@@ -141,7 +141,7 @@ const form = document.querySelector("form");
 form.addEventListener("submit", evt => {
   evt.preventDefault();
   const value = formInput.value;
-  let troof = (!document.querySelector('.card.flipped');
+  // let troof = (!document.querySelector('.card.flipped')
 
 
   //Test answer and update card
