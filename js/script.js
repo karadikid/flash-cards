@@ -141,16 +141,16 @@ const form = document.querySelector("form");
 form.addEventListener("submit", evt => {
   evt.preventDefault();
   const value = formInput.value;
-  let troof = (!document.querySelector('.card.flipped').style.backgroundImage);
+  // let troof = (!document.querySelector('.card.flipped').style.backgroundImage);
 
   //Test answer and update card
   if (value == yogaCards[cardCounter].title) {
     updateCard("You're a Yogi");
-    updateImg(`url(${"https://media.giphy.com/media/w5f56AhubQo8w/source.gif"}`)
+    updateImg("https://media.giphy.com/media/w5f56AhubQo8w/source.gif");
     clickButton();
   } else {
     updateCard("Asa Not!");
-    updateImg(`url(${"https://media.giphy.com/media/KBis3x78FezJK/source.gif"}`)
+    updateImg("https://media.giphy.com/media/KBis3x78FezJK/source.gif");
     clickButton();
   }
 });
