@@ -137,6 +137,7 @@ updateImg(yogaCards[0].image);
 //Function for capturing form input and comparing the value to yogaCard[cardCounter].title
 const formInput = document.querySelector("input");
 const form = document.querySelector("form");
+let userScore = 0;
 
 form.addEventListener("submit", evt => {
   evt.preventDefault();
@@ -146,8 +147,13 @@ form.addEventListener("submit", evt => {
 
   //Test answer and update card
   if (value == yogaCards[cardCounter].title) {
-    updateCard("You're a Yogi");
-    updateImg("https://media.giphy.com/media/w5f56AhubQo8w/source.gif");
+    if (userScore < yogaCards.length) {
+      userScore += 1;
+      updateCard("You're a Yogi" + "<br>" + "Score:" + "<br>" + userScore);
+      updateImg("https://media.giphy.com/media/w5f56AhubQo8w/source.gif");
+    } else {
+      updateCard("Yogimaster Won!");
+    }
     clickButton();
   } else {
     updateCard("Asa Not!" + "<br>" + "Answer:" + "<br>" + yogaCards[cardCounter].title);
