@@ -153,6 +153,7 @@ form.addEventListener("submit", evt => {
       updateImg("https://media.giphy.com/media/w5f56AhubQo8w/source.gif");
     } else {
       updateCard("Yogimaster Won!");
+      userScore = 0;
     }
     clickButton();
   } else {
