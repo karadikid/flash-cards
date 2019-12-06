@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #d06f78;
 }
 
 .flipCard {
@@ -49,6 +50,7 @@ body {
   /* background-color: #7030a0; */
   border: 3px solid white;
   color: #f4ae35 bold;
+  background-color: white;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
