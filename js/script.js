@@ -141,7 +141,8 @@ const form = document.querySelector("form");
 form.addEventListener("submit", evt => {
   evt.preventDefault();
   const value = formInput.value;
-  // let troof = (!document.querySelector('.card.flipped').style.backgroundImage);
+  let troof = (!document.querySelector('.card.flipped');
+
 
   //Test answer and update card
   if (value == yogaCards[cardCounter].title) {
