@@ -150,7 +150,7 @@ form.addEventListener("submit", evt => {
     updateImg("https://media.giphy.com/media/w5f56AhubQo8w/source.gif");
     clickButton();
   } else {
-    updateCard("Asa Not!");
+    updateCard("Asa Not!" + "<br>" + "Answer:" + "<br>" + yogaCards[cardCounter].title);
     updateImg("https://media.giphy.com/media/KBis3x78FezJK/source.gif");
     clickButton();
   }
