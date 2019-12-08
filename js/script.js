@@ -176,22 +176,3 @@ function getFlip() {
     return false;
   }
 }
-
-// //This function adds DOM elements to the div class="card"
-// function addChild(){
-//   let child = document.createElement("section");
-//   let textnode = document.createTextNode("Some Description");
-//   child.appendChild(textnode);
-//   document.querySelector(".card").appendChild(child);
-//   let dom_img = document.createElement("img");
-//   dom_img.src = "./images/1-Sirshasana_400x600.jpg"
-//   child.appendChild(dom_img);
-//   document.getElementsByTagName("img");
-// }
-// // addChild();
-
-// //Function to addListener
-// function addListener(){
-//   document.querySelector("img").addEventListener('click', )
-// }
-//Flip Card modification code https://codepen.io/101Computing/pen/GbOJmE?editors=1100
